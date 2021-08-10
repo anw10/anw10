@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
-<title>Arsalan Bin Najeeb</title>
+  <title>Arsalan Bin Najeeb</title>
 
-<!-- //Make changes for main page here
+  <!-- //Make changes for main page here
 Styling handled by style.css file in current directory -->
 
-<head>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
-</head>
+  <head>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+  </head>
 
-<link rel="stylesheet" type="text/css" href="styles.css">
-<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
-<body id="myPage">
+  <body id="myPage">
 
-  <div id="mySidenav" class="sidenav">
+    <!-- <div id="mySidenav" class="sidenav"> -->
     <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
-    <ul class="nav flex-column">
+    <!-- <ul class="nav flex-column">
       <li class="nav-item"><a class="nav-link" href="#aboutMe">About Me</a></li>
       <li class="nav-item"><a class="nav-link" href="#researchId">Research</a></li>
       <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -29,140 +29,196 @@ Styling handled by style.css file in current directory -->
       <li class="nav-item"><a class="nav-link" href="#experiences">Experiences</a></li>
       <li class="nav-item"><a class="nav-link" href="#food">Food</a></li>
     </ul>
-  </div>
+  </div> -->
 
-  <!-- <div class="sidenavC">
+    <div class="d-flex flex-column flex-shrink-0 bg-light" style="width: 4.5rem;">
+      <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
+        <li class="nav-item">
+          <a href="#aboutMe" class="nav-link active py-3 border-bottom" aria-current="page" title="Home"
+            data-bs-toggle="tooltip" data-bs-placement="right">
+            <span class="far fa-address-card" width="24" height="24" role="img" aria-label="Home">
+              <use xlink:href="#home" />
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#researchId" class="nav-link py-3 border-bottom" title="Dashboard" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <span class="far fa-window-restore" width="24" height="24" role="img" aria-label="Home">
+              <use xlink:href="#home" />
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link py-3 border-bottom" title="Orders" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <span class="fas fa-code" width="24" height="24" role="img" aria-label="Home">
+              <use xlink:href="#home" />
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#resume" class="nav-link py-3 border-bottom" title="Products" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <span class="far fa-file" width="24" height="24" role="img" aria-label="Home">
+              <use xlink:href="#home" />
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#experiences" class="nav-link py-3 border-bottom" title="Customers" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <span class="fas fa-users" width="24" height="24" role="img" aria-label="Home">
+              <use xlink:href="#home" />
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="#food" class="nav-link py-3 border-bottom" title="Customers" data-bs-toggle="tooltip"
+            data-bs-placement="right">
+            <span class="fas fa-drumstick-bite" width="24" height="24" role="img" aria-label="Home">
+              <use xlink:href="#home" />
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- <div class="sidenavC">
     <canvas id="sidenavC" onclick="openNav()">Menu</canvas>
   </div> -->
 
-  <div id="page-wrap">
+    <div id="page-wrap">
 
-    <div class="container header">
+      <div class="d-flex container-fluid mx-auto gap-5 bg-secondary align-items-center justify-content-center"
+        style="margin: 10em;">
+        <div>
+          <img src="arsalan.jpg" class="img-thumbnail" alt="Arsalan" width=12%>
+          <h1 class="" style="font-size: 4em;">Arsalan Bin Najeeb</h1>
+        </div>
 
-
-      <div class="row d-flex justify-content-center">
-        <img src="arsalan.jpg" class="img-fluid padding-1" alt="Arsalan" width=12%
-          style="border-radius: 10px;">
-        <h1 class="d-flex align-items-center" style="font-size: 4em;">Arsalan Bin Najeeb</h1>
-      </div>
-
-      <div class="row d-flex justify-content-center" style="padding-top: 5px;">
-        <p><span class="fas fa-envelope padding-1"></span><a class="padding-1">abnajeeb@knox.edu</a></p>
-        <p><span class="fas fa-phone padding-1"></span><a class="padding-1">(773)-999-4346</a></p>
-        <p><span class="fab fa-github padding-1"></span><a class="padding-1" href="https://github.com/anw10">anw10</a>
-        </p>
-        <p><span class="fab fa-linkedin padding-1"></span><a class="padding-1"
-            href="https://www.linkedin.com/in/arsalanwyne/">arsalan10</a></p>
-      </div>
-
-    </div>
-
-    <div class="container">
-      <div class="row">
-        <div id="aboutMe" class="aboutMe">
-          <h2>About Me</h2>
-          <h4><small>Welcome to my website, I recently graduated from Knox College with a double major in Computer
-              Science and Business & Management. I currently work as a Software Engineer at <a
-                href="https://conferencesolutions.com/"> Conference Scheduling Solutions</a>. I am also a Post-Bacc at Knox College, I help
-              the Office of International Student
-              Services with taking care of our International student body. I am also passionate about cooking and
-              taking
-              pictures of food!</small>
-          </h4>
+        <div>
+          <p><span class="fas fa-envelope padding-1"></span><a class="padding-1">abnajeeb@knox.edu</a></p>
+          <p><span class="fas fa-phone padding-1"></span><a class="padding-1">(773)-999-4346</a></p>
+          <p><span class="fab fa-github padding-1"></span><a class="padding-1" href="https://github.com/anw10">anw10</a>
+          </p>
+          <p><span class="fab fa-linkedin padding-1"></span><a class="padding-1"
+              href="https://www.linkedin.com/in/arsalanwyne/">arsalan10</a></p>
         </div>
       </div>
-    </div>
 
 
-    <div class="mb-5 container">
-      <div class="row">
-        <div id="researchId" class="research">
-          <h2>Research</h2>
-        </div>
-      </div>
-      <div class="mb-5 row">
-        <div class="touch">
-          <a><a href="http://touch.cs.txstate.edu/">ToUCH</a> is a collaborative project between Texas State University,
-            Concordia University and Knox College,
-            this is an NSF funded project. We are developing novel teaching materials for undergraduate students on
-            how
-            to program and use Heterogeneous Computing Systems.
-            We are using a combination of Heterogeneous systems for our materials such as the Raspberry Pi and mobile
-            phones based on the ARM big.LITTLE architecture and supercomputing systems with Nvidia cards that support
-            CUDA programming. We are currently working on using our materials to gather more information about their
-            effectiveness.</a>
-        </div>
-        <iframe src="Poster_RPI.pdf" height="700" width="80%"></iframe>
-      </div>
-      <div class="row">
-        <div class="mb-3 Dragonfly">
-          <a>Dragonfly is a High Performance Computer topology, our project was funded by an NSF grant. Working
-            alongside one other student and our advisor Prof. David Bunde, we developed an algorithm to map tasks onto a
-            dragonfly system. I presented our work at various conferences and at the 2018 Consortium of Computing
-            Science Colleges: MidWest Conference we were awarded 1st place for our work.</a>
-        </div>
-        <iframe src="Poster_Dragonfly.pdf" height="700" width="80%"></iframe>
-      </div>
-    </div>
-
-
-    <div class="container">
-      <div class="row">
-        <div id="projects" class="projects">
-          <h2>Projects</h2>
-        </div>
-      </div>
-      <div class="mb-5 row">
-        <div class="logo">
-          <img src="zing\logo.png" class="img-fluid" alt="Responsive image" width="22%" height="22%">
-          <a>Zing!</a>
-        </div>
-        <div class="zing">
-          <a>Cross Platform iOS and Android application made using React Native and Firebase. This was my startup
-            venture that provides a solution for finding events near you that are catered to your interests.</a>
-          <div class="d-flex flex-row-reverse">
-            <span class="fas fa-plus" onclick="openPics()"></span>
+      <div class="d-flex container-fluid mx-auto gap-5 bg-secondary align-items-center justify-content-center"
+        style="margin: 10em;">
+        <div class="row">
+          <div id="aboutMe" class="aboutMe">
+            <h2>About Me</h2>
+            <h4><small>Welcome to my website, I recently graduated from Knox College with a double major in Computer
+                Science and Business & Management. I currently work as a Software Engineer at <a
+                  href="https://conferencesolutions.com/"> Conference Scheduling Solutions</a>. I was also a Post-Bacc
+                at
+                Knox College, I helped
+                the Office of International Student
+                Services with taking care of our International student body. I am also passionate about cooking!</small>
+            </h4>
           </div>
-          <div id="sshots" style="display:none">
-            <img src="zing\1.gif" class="img-fluid" alt="Responsive image" width="30%" height="10px">
-            <img src="zing\2.gif" class="img-fluid" alt="Responsive image" width="30%" height="10px">
-            <!-- <img src="zing\3.png" class="img-fluid" alt="Responsive image">
+        </div>
+      </div>
+
+
+      <div class="d-flex container-fluid mx-auto gap-5 bg-secondary align-items-center justify-content-center"
+        style="margin: 10em;">
+        <div class="row">
+          <div id="researchId" class="research">
+            <h2>Research</h2>
+          </div>
+        </div>
+        <div class="mb-5 row">
+          <div class="touch">
+            <a><a href="http://touch.cs.txstate.edu/">ToUCH</a> is a collaborative project between Texas State
+              University,
+              Concordia University and Knox College,
+              this is an NSF funded project. We are developing novel teaching materials for undergraduate students on
+              how
+              to program and use Heterogeneous Computing Systems.
+              We are using a combination of Heterogeneous systems for our materials such as the Raspberry Pi and mobile
+              phones based on the ARM big.LITTLE architecture and supercomputing systems with Nvidia cards that support
+              CUDA programming. We are currently working on using our materials to gather more information about their
+              effectiveness.</a>
+          </div>
+          <iframe src="Poster_RPI.pdf" height="700" width="80%"></iframe>
+        </div>
+        <div class="row">
+          <div class="mb-3 Dragonfly">
+            <a>Dragonfly is a High Performance Computer topology, our project was funded by an NSF grant. Working
+              alongside one other student and our advisor Prof. David Bunde, we developed an algorithm to map tasks onto
+              a
+              dragonfly system. I presented our work at various conferences and at the 2018 Consortium of Computing
+              Science Colleges: MidWest Conference we were awarded 1st place for our work.</a>
+          </div>
+          <iframe src="Poster_Dragonfly.pdf" height="700" width="80%"></iframe>
+        </div>
+      </div>
+
+
+      <div class="d-flex container-fluid mx-auto gap-5 bg-secondary align-items-center justify-content-center"
+        style="margin: 10em;">
+        <div class="row">
+          <div id="projects" class="projects">
+            <h2>Projects</h2>
+          </div>
+        </div>
+        <div class="mb-5 row">
+          <div class="logo">
+            <img src="zing\logo.png" class="img-fluid" alt="Responsive image" width="22%" height="22%">
+            <a>Zing!</a>
+          </div>
+          <div class="zing">
+            <a>Cross Platform iOS and Android application made using React Native and Firebase. This was my startup
+              venture that provides a solution for finding events near you that are catered to your interests.</a>
+            <div class="d-flex flex-row-reverse">
+              <span class="fas fa-plus" onclick="openPics()"></span>
+            </div>
+            <div id="sshots" style="display:none">
+              <img src="zing\1.gif" class="img-fluid" alt="Responsive image" width="30%" height="10px">
+              <img src="zing\2.gif" class="img-fluid" alt="Responsive image" width="30%" height="10px">
+              <!-- <img src="zing\3.png" class="img-fluid" alt="Responsive image">
             <img src="zing\4.png" class="img-fluid" alt="Responsive image"> -->
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mb-5 row">
-        <div class="logo">
-          <img src="blob\logo.png" class="img-fluid" alt="Responsive image" width="110px" height="110px">
-          <a>B.L.O.B</a>
-        </div>
-        <div class="BLOB">
-          <a>Android application made using Unity, team based project for CS 292.
-            Work was divided into 3 sprints each a week long and our overall goal
-            was to incorporate awareness of climate change into it.
-          </a>
-          <div class="d-flex flex-row-reverse">
-            <span class="fas fa-plus" onclick="openPics2()"></span>
+        <div class="mb-5 row">
+          <div class="logo">
+            <img src="blob\logo.png" class="img-fluid" alt="Responsive image" width="110px" height="110px">
+            <a>B.L.O.B</a>
           </div>
-          <div id="sshots2" style="display:none">
-            <img src="blob\1.jpg" class="img-fluid" alt="Responsive image" width="50%" height="10px">
-            <img src="blob\2.jpg" class="img-fluid" alt="Responsive image" width="50%" height="10px">
-            <img src="blob\4.jpg" class="img-fluid" alt="Responsive image" width="50%" height="10px">
+          <div class="BLOB">
+            <a>Android application made using Unity, team based project for CS 292.
+              Work was divided into 3 sprints each a week long and our overall goal
+              was to incorporate awareness of climate change into it.
+            </a>
+            <div class="d-flex flex-row-reverse">
+              <span class="fas fa-plus" onclick="openPics2()"></span>
+            </div>
+            <div id="sshots2" style="display:none">
+              <img src="blob\1.jpg" class="img-fluid" alt="Responsive image" width="50%" height="10px">
+              <img src="blob\2.jpg" class="img-fluid" alt="Responsive image" width="50%" height="10px">
+              <img src="blob\4.jpg" class="img-fluid" alt="Responsive image" width="50%" height="10px">
+            </div>
           </div>
         </div>
-      </div>
-      <div class="mb-5 row">
-        <div class="logo">
-          <img src="scrub\splash.png" class="img-fluid" alt="Responsive image" width="140px" height="140px">
-          <a>Scrub</a>
-        </div>
-        <div class="Scrub">
-          <a>Cross Platform iOS and Android application made using React Native and Expo development stack.
-            Scrub teaches you the correct way to wash your hands as suggested by the CDC and WHO. App is also hosted
-            as
-            a <a href="https://expo.io/@anw/scrub">snack</a>.
-          </a>
-          <!-- <div class="d-flex flex-row-reverse">
+        <div class="mb-5 row">
+          <div class="logo">
+            <img src="scrub\splash.png" class="img-fluid" alt="Responsive image" width="140px" height="140px">
+            <a>Scrub</a>
+          </div>
+          <div class="Scrub">
+            <a>Cross Platform iOS and Android application made using React Native and Expo development stack.
+              Scrub teaches you the correct way to wash your hands as suggested by the CDC and WHO. App is also hosted
+              as
+              a <a href="https://expo.io/@anw/scrub">snack</a>.
+            </a>
+            <!-- <div class="d-flex flex-row-reverse">
             <span class="fas fa-plus" onclick="openPics2()"></span>
           </div>
           <div id="sshots2" style="display:none">
@@ -170,115 +226,114 @@ Styling handled by style.css file in current directory -->
             <img src="blob\2.jpg" class="img-fluid" alt="Responsive image" width="50%" height="10px">
             <img src="blob\4.jpg" class="img-fluid" alt="Responsive image" width="50%" height="10px">
           </div> -->
+          </div>
+        </div>
+      </div>
+
+
+      <div class="d-flex container-fluid mx-auto gap-5 bg-secondary align-items-center justify-content-center"
+        style="margin: 10em;">
+        <div class="row">
+          <div id="resume" class="pdf">
+            <h2>Resume</h2>
+            <iframe src="ArsalanBinNajeeb_Resume.pdf" height="600" width="1100"></iframe>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="d-flex container-fluid mx-auto gap-5 bg-secondary align-items-center justify-content-center"
+        style="margin: 10em;">
+        <div id="experiences" class="row contact">
+          <h2>Experiences</h2>
+        </div>
+        <div class="row">
+          <p> TA for 4 courses in Java; Object Oriented Programming, Data Structures (Maps, Arrays, Linked Lists, Trees,
+            Stacks), Algorithm Design & Analysis (BFS/DFS, A*, Sorting, Binary Search), Programming Languages</p>
+        </div>
+        <div class="row">
+          <p>Resident Assistant
+            Feb 2018 - Jun 2019 |
+
+            Alumni Ambassador President
+            Mar 2017 - Jun 2020 |
+
+            Computer Science Tutor
+            Sept 2017 - Jun 2020 |
+
+            Orientation Leader
+            Aug 2017 - Sept 2017</p>
+        </div>
+      </div>
+
+
+      <div class="d-flex container-fluid mx-auto gap-5 bg-secondary align-items-center justify-content-center"
+        style="margin: 10em;">
+        <div class="row">
+          <div id="food" class="food">
+            <h2>Food</h2>
+            <div class="row">
+              <div class="col">
+                <img src="food\1.jpg" class="rounded mx-auto" alt="Responsive image" width="90%" height="90%">
+              </div>
+              <div class="col">
+                <img src="food\2.jpg" class="rounded mx-auto" alt="Responsive image" width="90%" height="90%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <img src="food\3.jpg" class="rounded mx-auto" alt="Responsive image" width="90%" height="90%">
+              </div>
+              <div class="col">
+                <img src="food\4.jpg" class="rounded mx-auto" alt="Responsive image" width="90%" height="90%">
+              </div>
+            </div>
+            <div class="row">
+              <div class="text-center">
+                <img src="food\5.jpg" class="rounded " alt="Responsive image" width="50%" height="90%">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
 
+  </body>
+  <script>
+    var c = document.getElementById("sidenavC");
+    var ctx = c.getContext("2d");
+    ctx.beginPath();
+    ctx.arc(100, 75, 50, 0, 2 * Math.PI);
+    ctx.stroke();
+    ctx.fillStyle = 'grey';
+    ctx.fill();
 
-    <div class="mb-5 container">
-      <div class="row">
-        <div id="resume" class="pdf">
-          <h2>Resume</h2>
-          <iframe src="ArsalanBinNajeeb_Resume.pdf" height="600" width="1100"></iframe>
-        </div>
-      </div>
-    </div>
-
-    <div class="container">
-      <div id="experiences" class="row contact">
-        <h2>Experiences</h2>
-      </div>
-
-      <div class="row">
-        <p> TA for 4 courses in Java; Object Oriented Programming, Data Structures (Maps, Arrays, Linked Lists, Trees,
-          Stacks), Algorithm Design & Analysis (BFS/DFS, A*, Sorting, Binary Search), Programming Languages</p>
-      </div>
-
-      <div class="row">
-        <p>Resident Assistant
-          Feb 2018 - Jun 2019 |
-
-           Alumni Ambassador President
-          Mar 2017 - Jun 2020 |
-
-           Computer Science Tutor
-          Sept 2017 - Jun 2020 |
-
-           Orientation Leader
-          Aug 2017 - Sept 2017</p>
-      </div>
-    </div>
-
-
-    <div class="mb-5 container">
-      <div class="row">
-        <div id="food" class="food">
-          <h2>Food</h2>
-          <div class="row">
-            <div class="col">
-              <img src="food\1.jpg" class="rounded mx-auto" alt="Responsive image" width="90%" height="90%">
-            </div>
-            <div class="col">
-              <img src="food\2.jpg" class="rounded mx-auto" alt="Responsive image" width="90%" height="90%">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <img src="food\3.jpg" class="rounded mx-auto" alt="Responsive image" width="90%" height="90%">
-            </div>
-            <div class="col">
-              <img src="food\4.jpg" class="rounded mx-auto" alt="Responsive image" width="90%" height="90%">
-            </div>
-          </div>
-          <div class="row">
-            <div class="text-center">
-              <img src="food\5.jpg" class="rounded " alt="Responsive image" width="50%" height="90%">
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-  </div>
-
-
-</body>
-<script>
-  var c = document.getElementById("sidenavC");
-  var ctx = c.getContext("2d");
-  ctx.beginPath();
-  ctx.arc(100, 75, 50, 0, 2 * Math.PI);
-  ctx.stroke();
-  ctx.fillStyle = 'grey';
-  ctx.fill();
-
-  function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("page-wrap").style.marginLeft = "250px";
-  }
-  /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
-  function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("page-wrap").style.marginLeft = "0";
-  }
-
-  function openPics() {
-    if (document.getElementById("sshots").style.display === "none") {
-      document.getElementById("sshots").style.display = "block";
-    } else {
-      document.getElementById("sshots").style.display = "none";
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "250px";
+      document.getElementById("page-wrap").style.marginLeft = "250px";
     }
-  }
-
-  function openPics2() {
-    if (document.getElementById("sshots2").style.display === "none") {
-      document.getElementById("sshots2").style.display = "block";
-    } else {
-      document.getElementById("sshots2").style.display = "none";
+    /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+      document.getElementById("page-wrap").style.marginLeft = "0";
     }
-  }
-</script>
+
+    function openPics() {
+      if (document.getElementById("sshots").style.display === "none") {
+        document.getElementById("sshots").style.display = "block";
+      } else {
+        document.getElementById("sshots").style.display = "none";
+      }
+    }
+
+    function openPics2() {
+      if (document.getElementById("sshots2").style.display === "none") {
+        document.getElementById("sshots2").style.display = "block";
+      } else {
+        document.getElementById("sshots2").style.display = "none";
+      }
+    }
+  </script>
 
 </html>
